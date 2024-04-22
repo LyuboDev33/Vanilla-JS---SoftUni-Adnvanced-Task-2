@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/css/styles.css" />
+  <title>Adopt Me</title>
+</head>
+
+<body>
+  <h1>Adopt Me</h1>
+  <main>
+    <section id="adopt-pet">
+      <h2>Adoption Form</h2>
+      <form>
+        <input type="text" id="type" placeholder="Type of Animal">
+        <input type="number" id="age" placeholder="Age">
+
+        <select name="gender" id="gender">
+          <option value="" selected disabled>Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <button id="adopt-btn">Adopt!</button>
+      </form>
+    </section>
+    <div id="pet-info">
+      <section class="wrapper">
+        <h2>Check Info</h2>
+
+        <!-- INFO THAT NEED TO BE ADDED -->
+        <ul id="adoption-info">
+          
+          <template>
+            <li>
+              <article>
+                <p>Pet:Cat</p>
+                <p>Gender: Male</p>
+                <p>Age:4</p>
+              </article>
+  
+              <div class="buttons">
+                <button class="edit-btn">Edit</button>
+                <button class="done-btn">Done</button>
+              </div>
+  
+            </li>
+  
+          </template>
+
+        </ul>
+        <!-- INFO THAT NEED TO BE ADDED -->
+
+      </section>
+      <section class="wrapper">
+        <h2>Adopted Pets</h2>
+
+        <!-- final adopted pets -->
+        <ul id="adopted-list">
+
+        </ul>
+        <!-- final adopted pets -->
+
+   
+      </section>
+    </div>
+  </main>
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
